@@ -30,6 +30,7 @@ expect_success '"3asd1111111",4"' '"0003asd1111111"'
 expect_success '"3asd1111111",1' '"3asd1111111"' 
 expect_success '"+3asd1+",2' '"+03asd01+"' 
 expect_success '"+3asd1",2' '"+03asd01"' 
+expect_success '"+3asd1",0' '"+3asd1"' 
 
 expect_fail '"",a3' 
 expect_fail ',3' 
