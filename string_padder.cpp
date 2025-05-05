@@ -2,7 +2,6 @@
 
 int main() {
   try {
-    size_t X;
     std::string str;
     if (std::getline(std::cin, str, ',')) {
       if (str.size() < 2 || str.front() != '"' || str.back() != '"') {
@@ -14,7 +13,7 @@ int main() {
       if (X_str.empty() || X_str.front() == '-') {
         throw std::runtime_error("invalid input - X is empty or negative");
       }
-      X = std::stoul(X_str);
+      size_t X = std::stoul(X_str);
 
       size_t digit_num = 0;
       for (size_t i = 0; i < str.size(); ++i) {
