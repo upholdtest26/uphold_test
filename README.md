@@ -16,7 +16,7 @@ g++ ./string_padder.cpp -o ./string_padder
 
 # Time Complexity
 
-O(N*log(N) + N*X) -> O(N*log(N)), 
+O(N * log(N) + N * X) -> O(N * log(N)), 
 N - number of characters in the input string, 
 X - min number length
 
@@ -24,7 +24,7 @@ X - min number length
 
 # Space Complexity
 
-O(N), but in practice may end up O(N*log(N))
+O(N), but in practice may end up O(N * log(N))
 N - number of characters in the input string, 
 
 In the supplied code, there is a string containing all the input characters and there is no reason for **std::getline** to allocate more. In practice, this may be more complicated, as **std::getline** will be allocating blocks of different sizes, which may remain on the heap - one may call **malloc_trim** manually in order to shrink the heap!
