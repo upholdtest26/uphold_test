@@ -19,12 +19,12 @@ int main() {
       size_t digit_num = 0;
       for (size_t i = 0; i < str.size(); ++i) {
         char ch = str[i];
-        bool last_ch = (i + 1 == str.size());
         if (isdigit(ch)) {
             ++digit_num;
         } 
 
-        if ((!isdigit(ch) || last_ch) && digit_num > 0) {
+        bool is_last_ch = (i + 1 == str.size());
+        if ((!isdigit(ch) || is_last_ch) && digit_num > 0) {
             if (digit_num < X) {
               std::cout << std::string(X - digit_num, '0');
             }
