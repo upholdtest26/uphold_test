@@ -37,7 +37,7 @@ int main() {
         }
       }
     } else {
-        throw std::runtime_error("cannot read string");
+        throw std::runtime_error("cannot read input string");
     }
   } catch (std::exception& e) {
     std::cout << "\nGot exception -> [" << e.what() << "]\n";
