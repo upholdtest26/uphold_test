@@ -17,6 +17,7 @@ g++ ./string_padder.cpp -o ./string_padder
 # Time Complexity
 
 O(N * log(N) + N * X) -> O(N * log(N)), 
+
 N - number of characters in the input string, 
 X - min number length
 
