@@ -17,7 +17,7 @@ expect_fail () {
     fi
 }
 
-g++ ./string_padder.cpp -o ./string_padder 
+c++ ./string_padder.cpp -o ./string_padder 
 
 expect_success '"3",3' '"003"' 
 expect_success '"3",1' '"3"'

@@ -6,7 +6,7 @@
 
 # How to build
 ```
-g++ ./string_padder.cpp -o ./string_padder 
+c++ ./string_padder.cpp -o ./string_padder 
 ```
 
 # How to run tests
