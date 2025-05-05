@@ -2,7 +2,7 @@
 
 - strings from the standard input are double quoted - as in the examples from the description
 - output strings to the standard output are double quoted as well - as in the examples from the description
-- input strings are not exceeding RAM as we fully read the string into std::string object before reading X 
+- input strings are not exceeding RAM as we fully read the input into std::string object before reading X 
 
 # How to build
 ```
