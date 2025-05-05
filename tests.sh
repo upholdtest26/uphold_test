@@ -34,7 +34,7 @@ expect_success '"+3asd1",0' '"+3asd1"'
 
 expect_fail '"",a3' 
 expect_fail ',3' 
-expect_fail 'sdf' 
+expect_fail '"sdf"' 
 expect_fail '",3' 
 expect_fail ',-3'
 expect_fail '"",' 

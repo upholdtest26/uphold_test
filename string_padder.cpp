@@ -5,17 +5,19 @@ int main() {
     std::string str;
     if (std::getline(std::cin, str, ',')) {
       if (str.size() < 2 || str.front() != '"' || str.back() != '"') {
-        throw std::runtime_error("invalid input - string is not double-quoted");
+       std::cout << "invalid input - string is not double-quoted";
+       return 1;
       }
 
       std::string X_str;
       std::cin >> X_str;
       if (X_str.empty() || X_str.front() == '-') {
-        throw std::runtime_error("invalid input - X is empty or negative");
+        std::cout << "invalid input - X is empty or negative";
+        return 1;
       }
-      size_t X = std::stoul(X_str);
 
       size_t digit_num = 0;
+      size_t X = std::stoul(X_str);
       for (size_t i = 0; i < str.size(); ++i) {
         char ch = str[i];
         if (isdigit(ch)) {
@@ -36,13 +38,14 @@ int main() {
             std::cout << ch;
         }
       }
+
+      return 0;
     } else {
-        throw std::runtime_error("cannot read input string");
+        std::cout << "cannot read input string";
     }
   } catch (std::exception& e) {
     std::cout << "\nGot exception -> [" << e.what() << "]\n";
-    return 1;
   }
     
-  return 0;
+  return 1;
 }
