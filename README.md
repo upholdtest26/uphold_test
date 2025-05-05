@@ -5,12 +5,14 @@
 - input strings are not exceeding RAM as we fully consume one before reading X 
 
 # How to build
-
-g++ problem2.cpp -o ./string_padder 
+```
+g++ ./string_padder.cpp -o ./string_padder 
+```
 
 # How to run tests
-
+```
 ./tests.sh
+```
 
 # Time Complexity
 
