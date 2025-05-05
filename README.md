@@ -10,6 +10,8 @@ g++ ./string_padder.cpp -o ./string_padder
 ```
 
 # How to run tests
+
+in the same directy where the code is
 ```
 ./tests.sh
 ```
