@@ -32,9 +32,7 @@ int main() {
             digit_num = 0;
           }
 
-          if (!isdigit(ch)) {
-            std::cout << ch;
-          }
+          std::cout << ch;
         }
       }
 
