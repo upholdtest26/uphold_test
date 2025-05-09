@@ -39,4 +39,6 @@ expect_fail '",3'
 expect_fail ',-3'
 expect_fail '"",' 
 
+echo -e "\n-----------------"
 echo "ALL TESTS PASSED"
+echo -e "-----------------\n"
